@@ -3,6 +3,7 @@
     "background_color": "#0D0D0D",
     "text_color": "#27DA69",
     "card_color": "#121212",
+    "card_text_color": "#fff",
     "button_color": "#1B97F5",
     "button_text_color": "#fff"
   },
@@ -32,10 +33,14 @@
       "description": "Se você não comprar o curso, vc nunca vai conseguir."
     },
     {
+      "type": "divider",
+      "title": "Links Famosos"
+    },
+    {
       "type": "link-gallery",
       "url": "https://github.com/rodriguesabner",
-      "title": "Acesse meu github",
-      "description": "Acesse agora e se divirta"
+      "title": "Como comprar de graça na internet",
+      "description": "Acesse agora e bla bla bla"
     },
     {
       "type": "link-gallery",
@@ -52,8 +57,8 @@
     {
       "type": "link",
       "url": "https://github.com/rodriguesabner",
-      "title": "Acesse meu github",
-      "description": "Acesse agora e se divirta"
+      "title": "BRASIL CAMPEÃO EM 2026",
+      "description": "Acesse agora e COMPROVE A VITORIA"
     },
     {
       "type": "divider",
@@ -62,8 +67,8 @@
     {
       "type": "link",
       "url": "https://github.com/rodriguesabner",
-      "title": "Acesse meu github",
-      "description": "Acesse agora e se divirta"
+      "title": "asdsalhdsahk",
+      "description": "Acesseasdkjsalk agora e se divirta"
     },
     {
       "type": "link",
