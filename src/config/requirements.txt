@@ -1,0 +1,33 @@
+O que temos:
+
+header:
+ add contato
+ share info
+
+avatar
+nome
+
+-----
+
+social icons:
+
+email, git, youtube, insta
+
+-----
+
+ - abaixo de social icons, posso ter o que quiser -
+
+- link - github
+- arquivo - com título e descrição
+- galeria (swiper) com 2 link
+
+link - github
+
+divider
+ pode ou não conter um texto
+ margin top é grande
+ margin bottom é pequeno
+
+ mais 3 links
+ vídeo
+
