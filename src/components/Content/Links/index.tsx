@@ -5,12 +5,14 @@ import { ContentProps } from '../../../interfaces/Content'
 const Links = ({ item }: { item: ContentProps }): JSX.Element => {
   return (
         <Layout>
-            <Title>
-                {item.title}
-            </Title>
-            <Description>
-                {item.description}
-            </Description>
+            <a href={item.url} target={'_blank'} rel="noreferrer">
+                <Title>
+                    {item.title}
+                </Title>
+                <Description>
+                    {item.description}
+                </Description>
+            </a>
         </Layout>
   )
 }

@@ -8,22 +8,22 @@ const Social = (): JSX.Element => {
         <Layout>
             <SocialMediaWrapper>
                 <Item>
-                    <a href={settings.social_info.email}>
+                    <a href={settings.social_info.email} target={'_blank'} rel="noreferrer">
                         <EnvelopeSimple size={28} />
                     </a>
                 </Item>
                 <Item>
-                    <a href={settings.social_info.github}>
+                    <a href={settings.social_info.github} target={'_blank'} rel="noreferrer">
                         <GithubLogo size={28} />
                     </a>
                 </Item>
                 <Item>
-                    <a href={settings.social_info.youtube}>
+                    <a href={settings.social_info.youtube} target={'_blank'} rel="noreferrer">
                         <YoutubeLogo size={28} />
                     </a>
                 </Item>
                 <Item>
-                    <a href={settings.social_info.instagram}>
+                    <a href={settings.social_info.instagram} target={'_blank'} rel="noreferrer">
                         <InstagramLogo size={28} />
                     </a>
                 </Item>

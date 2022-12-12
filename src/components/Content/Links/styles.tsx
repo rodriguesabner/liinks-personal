@@ -6,6 +6,10 @@ export const Layout = styled.li`
   padding: 16px;
   border-radius: 4px;
   cursor: pointer;
+  
+  a {
+    text-decoration: none;
+  }
 `
 
 export const Title = styled.h3`
