@@ -83,8 +83,16 @@
       "description": "Acesse agora e se divirta"
     },
     {
+      "type": "divider",
+      "title": "Videos que eu gosto"
+    },
+    {
       "type": "video",
-      "url": "https://github.com/rodriguesabner"
+      "url": "https://www.youtube.com/embed/mtBIu9dfclY"
+    },
+    {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=X8ipUgXH6jw"
     }
   ]
 }
