@@ -4,11 +4,15 @@ import Links from './Links'
 import { ContentProps } from '../../interfaces/Content'
 import { ContentWrapper } from './styles'
 import Divider from './Divider'
+import Video from './Video'
+
 const Content = (): JSX.Element => {
   const renderContentByType = (content: ContentProps): JSX.Element | undefined => {
     switch (content.type) {
       case 'link':
         return <Links item={content} />
+      case 'video':
+        return <Video item={content} />
       case 'divider':
         return <Divider item={content} />
       default:
@@ -17,11 +21,11 @@ const Content = (): JSX.Element => {
   }
 
   return (
-        <ContentWrapper>
-            {settings.content.map((content) => (
-              renderContentByType(content)
-            ))}
-        </ContentWrapper>
+      <ContentWrapper>
+        {settings.content.map((content) => (
+          renderContentByType(content)
+        ))}
+      </ContentWrapper>
   )
 }
 

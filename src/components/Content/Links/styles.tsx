@@ -3,7 +3,6 @@ import settings from '../../../config/settings.json'
 
 export const Layout = styled.li`
   background-color: ${settings.app.card_color};
-  margin-bottom: 1.5em;
   padding: 16px;
   border-radius: 4px;
   cursor: pointer;
