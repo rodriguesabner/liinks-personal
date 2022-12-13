@@ -48,6 +48,16 @@
     },
     {
       "type": "divider",
+      "title": "Posts"
+    },
+    {
+      "type": "link",
+      "url": "https://medium.com/@abnerrodrigues/ler-qr-code-usando-java-e-a-sua-webcam-56445c2adaa9",
+      "title": "Ler QRCode - Java Swing",
+      "description": "Leia QRCode usando sua Webcam + Java Swing"
+    },
+    {
+      "type": "divider",
       "title": "Web Repos"
     },
     {
@@ -72,7 +82,7 @@
       "url": "https://www.youtube.com/watch?v=mIacjIhJsjk",
       "title": "Liinks Personal - Clone",
       "description": "Fazendo essa aplicação do ZERO, utilizando somente ReactJS",
-      "text_button":  "Acessar"
+      "text_button":  "Access Repo"
     },
     {
       "type": "link",
