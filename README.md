@@ -63,4 +63,8 @@ Tipos de conteúdo que você poode inserir:
 
 ## Screenshots
 
+Original
+![image](https://user-images.githubusercontent.com/40338524/207221830-bfb39fcf-a313-49a4-a813-69b74536f458.png)
+
+Clone
 ![image](https://user-images.githubusercontent.com/40338524/207211112-70377690-d7a9-4ba2-b5eb-43a7d957d603.png)
