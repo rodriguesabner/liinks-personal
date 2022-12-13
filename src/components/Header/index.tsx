@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Layout } from './styles'
 import { Share, UserPlus } from 'phosphor-react'
-import settings from '../../config/settings.json'
 import ModalShare from '../Modal'
 
 const Header = (): JSX.Element => {
@@ -9,10 +8,6 @@ const Header = (): JSX.Element => {
 
   const shareProfile = (): void => {
     setOpenModalShare(true)
-    void navigator.share({
-      title: `Check out ${settings.profile_info.fullName}'s page`,
-      url: window.location.href
-    })
   }
 
   const saveContact = (): void => {

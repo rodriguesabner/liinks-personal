@@ -5,6 +5,13 @@ import { X } from 'phosphor-react'
 import settings from '../../config/settings.json'
 
 const ModalShare = ({ open, onClose }: { open: boolean, onClose: any }): any => {
+  const share = (): void => {
+    void navigator.share({
+      title: `Check out ${settings.profile_info.fullName}'s page`,
+      url: window.location.href
+    })
+  }
+
   return open && createPortal(
         <Layout>
             <Container>
@@ -15,10 +22,10 @@ const ModalShare = ({ open, onClose }: { open: boolean, onClose: any }): any => 
 
                     <WrapperButtons>
                         <button>
-                            View QR Code
+                            Ver QR Code
                         </button>
-                        <button>
-                            Copy Page Url
+                        <button onClick={() => share()}>
+                            Compartilhar com amigos
                         </button>
                     </WrapperButtons>
                 </BodyModal>
