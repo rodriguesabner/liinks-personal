@@ -9,9 +9,14 @@
   },
   "profile_info": {
     "avatar": "https://github.com/rodriguesabner.png",
+    "firstName": "Abner",
+    "lastName": "Rodrigues",
     "fullName": "Abner Rodrigues",
-    "email": "",
-    "phoneNumber": "55 11 91234-5678"
+    "email": "abnerodrigs@gmail.com",
+    "phoneNumber": "55 11 91234-5678",
+    "company": "Abner Rodrigues LTDA",
+    "jobTitle": "Web Developer",
+    "role": "Data Protection Officer"
   },
   "social_info": {
     "email": "abnerodrigs@gmail.com",

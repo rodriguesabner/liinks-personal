@@ -1,19 +1,25 @@
 import React from 'react'
 import { createPortal } from 'react-dom'
-import { BodyModal, Container, Layout, WrapperButtons } from './styles'
+import { Backdrop, BodyModal, Container, Layout, WrapperButtons } from './styles'
 import { X } from 'phosphor-react'
-import settings from '../../config/settings.json'
+import settings from '../../../config/settings.json'
 
-const ModalShare = ({ open, onClose }: { open: boolean, onClose: any }): any => {
+const ModalShare = ({ open, onClose, onCallQrCode }: { open: boolean, onClose: any, onCallQrCode: any }): any => {
   const share = (): void => {
-    void navigator.share({
-      title: `Check out ${settings.profile_info.fullName}'s page`,
-      url: window.location.href
-    })
+    try {
+      void navigator.share({
+        title: `Check out ${settings.profile_info.fullName}'s page`,
+        url: window.location.href
+      })
+      onClose()
+    } catch (e) {
+      onClose()
+    }
   }
 
   return open && createPortal(
         <Layout>
+            <Backdrop onClick={() => onClose()} />
             <Container>
                 <X color={'#fff'} size={26} onClick={() => onClose()}/>
                 <BodyModal>
@@ -21,7 +27,7 @@ const ModalShare = ({ open, onClose }: { open: boolean, onClose: any }): any => 
                     <img src={settings.profile_info.avatar} alt={settings.profile_info.fullName}/>
 
                     <WrapperButtons>
-                        <button>
+                        <button onClick={() => onCallQrCode()}>
                             Ver QR Code
                         </button>
                         <button onClick={() => share()}>
