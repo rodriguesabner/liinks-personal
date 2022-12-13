@@ -1,7 +1,7 @@
 import React from 'react'
 import { Swiper } from 'swiper/react'
 import { ContentProps } from '../../../interfaces/Content'
-import { ButtonWrapper, Container, CoverImage, Description, Layout, SwiperWrapper, Title } from './styles'
+import { Container, CoverImage, Description, Layout, Link, SwiperWrapper, Title } from './styles'
 import 'swiper/css'
 
 const Gallery = ({ items }: { items: ContentProps[] }): JSX.Element => {
@@ -21,11 +21,9 @@ const Gallery = ({ items }: { items: ContentProps[] }): JSX.Element => {
                             <Description>{item.description}</Description>
 
                             {item.text_button != null && (
-                                <ButtonWrapper>
-                                    <a href={item.url} target={'_blank'} rel={'noreferrer'}>
-                                        {item.text_button}
-                                    </a>
-                                </ButtonWrapper>
+                                <Link href={item.url} target={'_blank'} rel={'noreferrer'}>
+                                    {item.text_button}
+                                </Link>
                             )}
                         </Container>
                     </Layout>

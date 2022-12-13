@@ -14,9 +14,14 @@ export default createGlobalStyle`
     background-color: ${settings.app.background_color};
   }
   
+  .App {
+    position: relative;
+  }
+  
   body {
     font-family: 'Rubik', sans-serif;
     color: ${settings.app.text_color};
+    position: relative;
   }
 
   a {

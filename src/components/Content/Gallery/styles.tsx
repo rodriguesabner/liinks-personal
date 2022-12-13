@@ -22,7 +22,10 @@ export const CoverImage = styled.img`
 
 export const Container = styled.div`
   padding: 16px;
-  padding-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `
 
 export const Title = styled.h3`
@@ -37,10 +40,9 @@ export const Description = styled.p`
   color: ${settings.app.card_text_color};
   font-size: 12px;
   opacity: .5;
-  margin-bottom: 2.5em;
 `
 
-export const ButtonWrapper = styled.a`
+export const Link = styled.a`
   padding: 10px;
   border-radius: 4px;
   background-color: ${settings.app.button_color};
@@ -50,11 +52,6 @@ export const ButtonWrapper = styled.a`
   width: 200px;
   height: 42px;
   margin: 20px auto 0 auto !important;
-  
-  a {
-    text-decoration: none;
-    color: ${settings.app.button_text_color};
-    width: 100%;
-    height: 100%;
-  }
+  text-decoration: none;
+  color: ${settings.app.button_text_color}; 
 `
