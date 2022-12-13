@@ -1,46 +1,66 @@
-# Getting Started with Create React App
+# Liinks Personal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Liinks Personal é um 'clone' da aplicação **liinks.co**.
 
-## Available Scripts
+## Instalação
 
-In the project directory, you can run:
+```bash
+    git clone
+    https://github.com/rodriguesabner/liinks-personal
+    cd liinks-personal
+    yarn install
+```
 
-### `yarn start`
+## Configuração
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Path do arquivo: **src/config/settings.json**
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `yarn test`
+Para alterar o conteúdo do seu projeto, basta editar o arquivo **settings.json**.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `yarn build`
+Você pode as cores da aplicação de acordo com seu gosto:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```json
+{
+    "background_color": "#0D0D0D",
+    "text_color": "#27DA69",
+    "card_color": "#121212",
+    "card_text_color": "#fff",
+    "button_color": "#1B97F5",
+    "button_text_color": "#fff"
+}
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Tipos de conteúdo que você poode inserir:
 
-### `yarn eject`
+```json   
+[ 'link', 'link-gallery', 'divider', 'video' ]
+```
+**tem exemplo de uso no arquivo**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Rodando o projeto
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+    yarn start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Buildando o projeto para fazer deploy
 
-## Learn More
+```bash
+    yarn build
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Demo
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Clique aqui para acessar](https://profile-rodriguesabner.vercel.app/)
+
+## Screenshots
+
+![image](https://user-images.githubusercontent.com/40338524/207211112-70377690-d7a9-4ba2-b5eb-43a7d957d603.png)
