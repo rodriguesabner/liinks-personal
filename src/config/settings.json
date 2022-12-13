@@ -52,9 +52,15 @@
     },
     {
       "type": "link",
-      "url": "https://medium.com/@abnerrodrigues/ler-qr-code-usando-java-e-a-sua-webcam-56445c2adaa9",
+      "url": "https://rodriguesabner1.medium.com/amigo-secreto-nodejs-538762bfe0d9",
+      "title": "Amigo Secreto - NodeJS",
+      "description": "Criando uma aplicação simples para realizar sorteio do amigo secreto."
+    },
+    {
+      "type": "link",
+      "url": "https://rodriguesabner1.medium.com/ler-qr-code-usando-java-e-a-sua-webcam-56445c2adaa9",
       "title": "Ler QRCode - Java Swing",
-      "description": "Leia QRCode usando sua Webcam + Java Swing"
+      "description": "Leia QRCode em tempo real utilizando Java Swing"
     },
     {
       "type": "divider",
