@@ -9,8 +9,7 @@ const Gallery = ({ items }: { items: ContentProps[] }): JSX.Element => {
         <Swiper
             spaceBetween={20}
             slidesPerView={1.45}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
+            centeredSlides={true}
         >
             {items.map((item, index) => (
                 <SwiperWrapper key={index}>

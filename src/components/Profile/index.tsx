@@ -1,16 +1,19 @@
 import React from 'react'
 import settings from '../../config/settings.json'
 import { Avatar, FullName, Layout } from './styles'
+
 const Profile = (): JSX.Element => {
+  const fullName = `${settings.profile_info.firstName} ${settings.profile_info.lastName}`
+
   return (
         <Layout>
             <Avatar
                 src={settings.profile_info.avatar}
-                alt={settings.profile_info.fullName}
+                alt={fullName}
                 draggable={false}
             />
             <FullName>
-                {settings.profile_info.fullName}
+                {fullName}
             </FullName>
         </Layout>
   )

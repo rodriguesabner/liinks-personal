@@ -15,6 +15,11 @@ export const Layout = styled.div`
     z-index: 2;
     cursor: pointer;
   }
+
+  @media(min-width: 768px) {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 `
 
 export const Backdrop = styled.div`
@@ -79,4 +84,5 @@ export const UrlComponent = styled.p`
   color: #000;
   margin-bottom: 20px;
   font-size: 14px;
+  margin-top: 5px;
 `

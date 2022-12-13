@@ -6,6 +6,8 @@ export default createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
   }
   
   html, body, #root, .App {
@@ -16,6 +18,13 @@ export default createGlobalStyle`
   
   .App {
     position: relative;
+    
+    @media(min-width: 768px) {
+      max-width: 500px;
+      margin: 0 auto;
+      border: 2px solid ${settings.app.card_color};
+      overflow: auto;
+    }
   }
   
   body {
@@ -34,5 +43,20 @@ export default createGlobalStyle`
     border: 0;
     outline: 0;
     cursor: pointer;
+  }
+
+  ::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #070807;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
   }
 `

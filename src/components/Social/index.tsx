@@ -1,32 +1,34 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Item, Layout, SocialMediaWrapper } from './styles'
 import settings from '../../config/settings.json'
-import { EnvelopeSimple, GithubLogo, YoutubeLogo, InstagramLogo } from 'phosphor-react'
+import { SocialInfoProps } from '../../interfaces/Config'
+import FormatIcon from './FormatIcon'
 
 const Social = (): JSX.Element => {
+  const [config, setConfig] = useState<SocialInfoProps[]>([])
+
+  useEffect(() => {
+    const arr = []
+    for (const elem of settings.social_info) {
+      arr.push({
+        ...elem,
+        icon: <FormatIcon name={elem.name.toLowerCase()} />
+      })
+    }
+
+    setConfig(arr)
+  }, [])
+
   return (
         <Layout>
             <SocialMediaWrapper>
-                <Item>
-                    <a href={settings.social_info.email} target={'_blank'} rel="noreferrer">
-                        <EnvelopeSimple size={28} />
-                    </a>
-                </Item>
-                <Item>
-                    <a href={settings.social_info.github} target={'_blank'} rel="noreferrer">
-                        <GithubLogo size={28} />
-                    </a>
-                </Item>
-                <Item>
-                    <a href={settings.social_info.youtube} target={'_blank'} rel="noreferrer">
-                        <YoutubeLogo size={28} />
-                    </a>
-                </Item>
-                <Item>
-                    <a href={settings.social_info.instagram} target={'_blank'} rel="noreferrer">
-                        <InstagramLogo size={28} />
-                    </a>
-                </Item>
+                {config.map((item: any, index) => (
+                    <Item key={index}>
+                        <a href={item.url} target={'_blank'} rel="noreferrer">
+                            {item.icon}
+                        </a>
+                    </Item>
+                ))}
             </SocialMediaWrapper>
         </Layout>
   )

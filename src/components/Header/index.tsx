@@ -37,7 +37,8 @@ const Header = (): JSX.Element => {
   }
 
   const generateDownloadFile = (vCard: any): void => {
-    const myFile = new File([vCard.toString()], `${settings.profile_info.fullName}.vcf`)
+    const fullname = `${settings.profile_info.firstName} ${settings.profile_info.lastName}`
+    const myFile = new File([vCard.toString()], `${fullname}.vcf`)
 
     const link: any = document.createElement('a')
     link.style.display = 'none'
