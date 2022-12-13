@@ -8,8 +8,7 @@ const Gallery = ({ items }: { items: ContentProps[] }): JSX.Element => {
   return (
         <Swiper
             spaceBetween={20}
-            slidesPerView={1.45}
-            centeredSlides={true}
+            slidesPerView={1.50}
         >
             {items.map((item, index) => (
                 <SwiperWrapper key={index}>
