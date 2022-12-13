@@ -49,9 +49,10 @@ export const Link = styled.a`
   border: 0;
   outline: 0;
   cursor: pointer;
-  width: 200px;
-  height: 42px;
+  width: 150px;
   margin: 20px auto 0 auto !important;
   text-decoration: none;
-  color: ${settings.app.button_text_color}; 
+  color: ${settings.app.button_text_color};
+  font-weight: 300;
+  font-size: 14px;
 `

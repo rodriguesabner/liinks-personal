@@ -1,5 +1,5 @@
 import styled from 'styled-components'
 
 export const Layout = styled.div`
-  padding-top: 2em;
+  padding-top: 1em;
 `

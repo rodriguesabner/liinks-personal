@@ -9,8 +9,8 @@ export const Layout = styled.div`
 `
 
 export const Avatar = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
 `
 
