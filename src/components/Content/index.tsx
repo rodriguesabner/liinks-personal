@@ -17,17 +17,14 @@ const Content = (): JSX.Element => {
   const setUpItems = (): void => {
     const contents: ContentProps[] = settings.content
     const contentsLinkGallery = contents.filter((c) => c.type === 'link-gallery')
-    const arrIndex: number[] = []
+
+    const indexes: any[] = contents
+      .map((c, i) => c.type === 'link-gallery' ? i : null)
+      .filter((i) => i !== null)
 
     contents.forEach((item, index) => {
       if (item.type === 'link-gallery') {
-        arrIndex.push(index)
-      }
-    })
-
-    contents.forEach((item, index) => {
-      if (item.type === 'link-gallery') {
-        contents[arrIndex[0]].linkGalleryItems = contentsLinkGallery
+        contents[indexes[0]].linkGalleryItems = contentsLinkGallery
       }
     })
 
